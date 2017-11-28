@@ -4,7 +4,7 @@ An android IP camera remote controller.
 * I use Java in here instead of C# *(Since I have difficulty finding resources in C#. Sorry Hunny!)*
 
 ### Requirements:
-* Android Studio (You can still use java in Visual Studio. You can add java support [**here**](https://marketplace.visualstudio.com/items?itemName=georgewfraser.vscode-javac))
+* Android Studio (You can still use java in Visual Studio. You can add java support [**here**](https://marketplace.visualstudio.com/items?itemName=SamHarwell.JavaLanguageSupport)- Feel free to use this)
 * An android device (If you have the confidence to use a Xamarin Forms for cross-platform. I support you!)
 * A router
 * PPoE Ethernet switch (If your router has a PPoE. Condragulations! You can ignore this one.)
