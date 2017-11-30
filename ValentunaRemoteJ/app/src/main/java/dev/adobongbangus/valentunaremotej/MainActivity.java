@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(R.layout.WelcomeTab, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
@@ -135,9 +135,21 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            //Switch Tab layouts
+            switch (position)
+            {
+                case 0:
+                    WelcomePage tab1 = new WelcomePage();
+                    return tab1;
+                case 1:
+                    LivePlayPage tab2 = new LivePlayPage();
+                    return tab2;
+                case 2:
+                    DeviceManagerPage tab3 = new DeviceManagerPage();
+                    return tab3;
+                default:
+                    return null;
+            }
         }
 
         @Override
