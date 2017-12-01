@@ -11,6 +11,6 @@ An android IP camera remote controller.
 * IP Camera (The star)
 * **Optional**: A minimum of API 21 Android Lollipop (You can modify it from the minimum target framwork of solution settings)
 * Peace of mind (Required)
-* And internet connection (if the project throws an error and your anxiety levels climbs up)
+* And internet connection (In case if the project throws an error and your anxiety levels climbs up)
 * Good playlist
 * A complete sleep
