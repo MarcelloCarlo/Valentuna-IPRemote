@@ -15,7 +15,7 @@ public class DeviceManagerPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.DeviceManagerTab, container, false);
-        return rootView;
+        View deviceManagerView = inflater.inflate(R.layout.devicemanager_tab, container, false);
+        return deviceManagerView;
     }
 }

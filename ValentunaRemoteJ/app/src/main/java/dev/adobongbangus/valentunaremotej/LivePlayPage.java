@@ -15,7 +15,7 @@ public class LivePlayPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.LivePlayTab, container, false);
-        return rootView;
+        View livePlayView = inflater.inflate(R.layout.liveplay_tab, container, false);
+        return livePlayView;
     }
 }
