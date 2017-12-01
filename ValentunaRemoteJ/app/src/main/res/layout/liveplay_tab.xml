@@ -1,4 +1,5 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,68 +8,100 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="dev.adobongbangus.valentunaremotej.MainActivity$PlaceholderFragment">
-    <RelativeLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
+
+    <TextView
+        android:id="@+id/textlabel"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/device"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <VideoView
+        android:id="@+id/VideoRender1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/relativeLayoutf2"
-        android:gravity="center">
-        <RelativeLayout
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/relativeLayoutsubf1">
-            <TextView
-                android:text="@string/device"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textlabel"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="14.5dp" />
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="34.0dp"
-                android:layout_marginLeft="115.0dp"
-                android:id="@+id/DeviceSpinner"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="2.0dp"
-                android:layout_marginRight="4.0dp" />
-            <Spinner
-                android:layout_width="fill_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="116.5dp"
-                android:layout_below="@id/DeviceSpinner"
-                android:id="@+id/ChannelSpinner"
-                android:layout_marginBottom="12.5dp"
-                android:layout_marginRight="3.5dp" />
-            <VideoView
-                android:layout_width="fill_parent"
-                android:layout_height="250dp"
-                android:id="@+id/VideoRender1"
-                android:layout_below="@id/ChannelSpinner"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="18.5dp" />
-            <Button
-                android:layout_width="152.5dp"
-                android:layout_height="match_parent"
-                android:layout_below="@id/VideoRender1"
-                android:text="@string/start_play"
-                android:id="@+id/CamLivePlay" />
-            <TextView
-                android:text="@string/channel"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textlabel2"
-                android:layout_below="@id/textlabel"
-                android:layout_marginTop="0.0dp"
-                android:layout_above="@id/textlabel2"
-                android:layout_marginLeft="20dp" />
-        </RelativeLayout>
-    </RelativeLayout>
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/CamLivePlay"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/textlabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_above="@id/textlabel2"
+        android:layout_below="@id/textlabel"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/channel"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Spinner
+        android:id="@+id/channel_spinner"
+        android:layout_width="207dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Spinner
+        android:id="@+id/device_spinner"
+        android:layout_width="215dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
 
 </android.support.constraint.ConstraintLayout>
