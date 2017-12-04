@@ -12,18 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="250dp" />
 
-    <Spinner
-        android:id="@+id/channel_spinner"
-        android:layout_width="207dp"
-        android:layout_height="34dp"
-        android:layout_marginLeft="4dp" />
 
-    <TextView
-        android:id="@+id/textlabel"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:text="@string/channel"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
         android:id="@+id/device_spinner"
