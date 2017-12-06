@@ -7,24 +7,12 @@
 
     <VideoView
         android:id="@+id/videoRender"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="140dp"
         android:layout_width="fill_parent"
         android:layout_height="250dp" />
 
 
 
-    <Spinner
-        android:id="@+id/device_spinner"
-        android:layout_width="215dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="15dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/device" />
 
     <Button
         android:id="@+id/camLivePlay"

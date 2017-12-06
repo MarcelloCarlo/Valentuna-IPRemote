@@ -8,29 +8,96 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="dev.adobongbangus.valentunaremotej.MainActivity$PlaceholderFragment">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <RelativeLayout
+            android:id="@+id/rl1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:id="@+id/textlabel"
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="33dp"
-                    android:text="@string/channel"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/device" />
+
                 <Spinner
-                    android:id="@+id/channel_spinner"
-                    android:layout_width="207dp"
-                    android:layout_height="34dp"
-                    android:layout_marginStart="5dp"/>
+                    android:id="@+id/device_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp" />
+
             </LinearLayout>
+
         </RelativeLayout>
 
-</RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView"
+            android:layout_below="@+id/rl1"
+            android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:padding="2dp"
+                android:id="@+id/cardThree"
+                android:layout_toEndOf="@+id/cardTwo"
+                android:background="@color/arrow">
+
+                //your view here like a Layout including textView.
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:id="@+id/cardOne"
+                android:background="@color/colorAccent">
+                <VideoView
+                    android:id="@+id/videoRender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp" />
+
+            //your view here like a Layout including textView.
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:padding="2dp"
+            android:id="@+id/cardTwo"
+            android:layout_toEndOf="@+id/cardOne"
+            android:background="@color/colorPrimary">
+
+            //your view here like a Layout including textView.
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</HorizontalScrollView>
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
